@@ -1,11 +1,14 @@
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 export default function Header() {
 
-    return(
+    return (
         <header>
             <div className="container">
-                <h1 className="site-name">MeuSite</h1>
+                <Link to="/sub">
+                    <h1 className="site-name">MeuSite</h1>
+                </Link>
             </div>
         </header>
     );
